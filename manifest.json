@@ -1,6 +1,6 @@
 {
   "name": "Airflow Utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "Make Airflow web UI better",
   "homepage_url": "https://airflow.apache.org/",
@@ -22,7 +22,11 @@
       ],
       "js": [
         "src/inject/inject.js"
-      ]
+      ],
+      "run_at": "document_end"
     }
+  ],
+  "web_accessible_resources": [
+    "src/inject/dark.css"
   ]
 }
